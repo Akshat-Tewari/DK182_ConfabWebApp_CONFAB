@@ -13,72 +13,102 @@ import scrollDown from "../../images/scrollDownIcon.png";
 import "../../App.css";
 
 class Header extends Component {
-
   handleLogout = () => {
     this.props.logout();
   };
 
- 
   renderAuthButtons = () => {
     const { isAuth } = this.props.auth;
     if (isAuth) {
       return (
-         <React.Fragment>
-             <div className=" flex   justify-between">
-                     {/*} <Link className="  link" to="/current">Current</Link>
+        <React.Fragment>
+          <div className=" flex   justify-between">
+            {/*} <Link className="  link" to="/current">Current</Link>
                       <Link className="  link" to="/finished">Finished</Link>
                       <Link className="  link" to="/">Contribute</Link>
                       <Link className="  link" to="/">Blogs</Link>
                        <Link className=" no-underline  dark-gray f6 fw6 pa1 pr4 link" to="/">My Profile</Link>
                         */}
-                          <input type="text" className="search-box" placeholder="Search"/>
-    
-                      <Link to="/cart">
-                        <img src={saveIcon} alt="" className="mt2 mh3   " style={{width:'22px' , height:'22px'}}/>  
-                      </Link>
-                      <div className="flex">
-                        <img src={avatar} alt="" className="" style={{width:'35px' , height:'35px'}}/>
-                        <img src={scrollDown} alt="" className="mt2 pt1 ml1" style={{width:'15px' , height:'15px'}}/>
-                        
-                      </div>
-                      <button
-                              className="  login-btn  no "
-                              onClick={this.handleLogout}>
-                                     <h2 className="ttu fw6 " style={{fontSize:'0.8em' , margin:'0 10px'}}>Log Out</h2>
+            <input type="text" className="search-box" placeholder="Search" />
 
-                      </button> 
-                     
+            <Link to="/cart">
+              <img
+                src={saveIcon}
+                alt=""
+                className="mt2 mh3   "
+                style={{ width: "22px", height: "22px" }}
+              />
+            </Link>
+           
+
+            <div class="dropdown">
+               <div className="flex dropbtn">
+              <img
+                src={avatar}
+                alt=""
+                className=""
+                style={{ width: "35px", height: "35px" }}
+              />
+              <img
+                src={scrollDown}
+                alt=""
+                className="mt2 pt1 ml1"
+                style={{ width: "15px", height: "15px" }}
+              />
+            </div>
+              <div class="dropdown-content pv2 ph1 f7 ">
+                <a href="#" className="pt2">View Profile</a>
+                <a href="#">Shared</a>
+                <a href="#" className="pb4">Shared with me</a>
               </div>
-          </React.Fragment>
+            </div>
+
+            <button className="  login-btn  no " onClick={this.handleLogout}>
+              <h2
+                className="ttu fw6 "
+                style={{ fontSize: "0.8em", margin: "0 10px" }}
+              >
+                Log Out
+              </h2>
+            </button>
+          </div>
+        </React.Fragment>
       );
-    }else{
-      return(
-         <React.Fragment>
-              <div className=" flex  justify-between ">
-                  {/* <Link className=" no-underline  dark-gray f6 fw6 pa1 pr4 link" to="/">My Profile</Link> */}
+    } else {
+      return (
+        <React.Fragment>
+          <div className=" flex  justify-between ">
+            {/* <Link className=" no-underline  dark-gray f6 fw6 pa1 pr4 link" to="/">My Profile</Link> */}
 
-                  <Link className="login-btn  no " to="/login" onClick={this.changeModalState} >Log In</Link>
-                  <Link className="register-btn  no" to="/register">Sign Up</Link>
-              </div>
-         </React.Fragment>
-        );
+            <Link
+              className="login-btn  no "
+              to="/login"
+              onClick={this.changeModalState}
+            >
+              Log In
+            </Link>
+            <Link className="register-btn  no" to="/register">
+              Sign Up
+            </Link>
+          </div>
+        </React.Fragment>
+      );
     }
   };
 
   render() {
     return (
       <nav className="header l  black flex justify-between">
-        
         <button className="logo l no">CF</button>
-        <a
-          className=" no-underline dark-gray  flex ites-center "
-          href="/"
-        >
-          <h2 className=" pa0 ma0 pl6 fw6 black-90" style={{ fontSize:'20px' ,  letterSpacing:'1px'}}>ConFab</h2>
+        <a className=" no-underline dark-gray  flex ites-center " href="/">
+          <h2
+            className=" pa0 ma0 pl6 fw6 black-90"
+            style={{ fontSize: "20px", letterSpacing: "1px" }}
+          >
+            ConFab
+          </h2>
         </a>
-        <div className="items-center ">
-          {this.renderAuthButtons()}
-        </div>
+        <div className="items-center ">{this.renderAuthButtons()}</div>
       </nav>
     );
   }
@@ -86,7 +116,7 @@ class Header extends Component {
 
 function mapStateToProps(state) {
   return {
-    auth: state.authReducer
+    auth: state.authReducer,
   };
 }
 

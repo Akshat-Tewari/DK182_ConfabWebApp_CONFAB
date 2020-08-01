@@ -11,7 +11,7 @@ exports.getAll = (req , res) => {
         }
 
         return res.json(foundProjects);
-    })
+    }).sort({createdAt : -1});
 };
 
 

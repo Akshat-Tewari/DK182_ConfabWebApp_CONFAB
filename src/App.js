@@ -7,6 +7,8 @@ import Footer from "./components/shared/Footer";
 import "./App.css";
 
 import Dashboard from "./components/dashboard/Dashboard";
+import NewPost from "./components/newPost/NewPost";
+
 
 
 import Login from "./components/login/Login";
@@ -54,7 +56,7 @@ class App extends Component {
             
             <ProtectedRoute exact path="/" component={Dashboard} />
             <Route exact path="/folder/:slug" component={Dashboard} />
-            <Route exact path="/prime" component={Dashboard} />
+            <Route exact path="/new" component={Dashboard} />
             
 
               <Route exact path="/login/" component={Login} />

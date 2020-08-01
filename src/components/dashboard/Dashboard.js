@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import ProjectListing from "../projectsListing/ProjectListing";
 
 import ProjectDetail from "../projectDetail/ProjectDetail";
-import Prime from "../current/Prime";
+import NewPost from "../newPost/NewPost";
 import MainPage from "../mainPage/MainPage";
 
 class Dashboard extends Component {
@@ -16,7 +16,8 @@ class Dashboard extends Component {
           <MainPage>
             <Route exact path="/" component={ProjectListing} />
             <Route path="/folder/:slug" component={ProjectDetail} />
-            <Route path="/prime" component={Prime} />
+            <Route path="/new" component={NewPost} />
+
           </MainPage>
         </div>
       </Router>

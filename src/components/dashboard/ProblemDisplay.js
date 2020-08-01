@@ -46,7 +46,18 @@ class ProblemDisplay extends Component {
 								<div className="s-s-icon flex">
 									<h2 className="f7 black-80 fm pb3 mh3">0 Comments</h2>
 									<img src={saveIcon} alt="" title="Save" style={{height:"20px"}} className="mh2 pt2"/>
-									<img src={shareIcon} alt="" title="Share " style={{height:"17px"}} className="mh2 pt2 "/>
+
+
+
+									<div class="dropdown">
+              							<div className="flex dropbtn">
+											<img src={shareIcon} alt="" title="Share " style={{height:"17px"}} className="mh2 pt2 "/>
+           								</div>
+							              <div class="dropdown-content2  f7 tc ph2 pv5">
+											<img src={shareIcon} alt="" title="Share " style={{height:"25px"}} className="mh2 pt2 "/>
+								             <p className="f6 black-70">Add Your Peers to Share</p>
+							              </div>
+							            </div>
 								</div>
 							</div>
 
