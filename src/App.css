@@ -1,0 +1,225 @@
+* {
+    line-height: 1.81;
+    letter-spacing: 1.5px;
+    padding: 0;
+}
+
+.fm {
+    font-family: "Montserrat", sans-serif;
+}
+
+.l {
+    font-family: "Lora", sans-serif;
+}
+
+.nol {
+    outline: none;
+}
+
+.card {
+    box-shadow: rgba(19, 15, 235, 0.2) 1px 2px 15px;
+    border-radius: 40px;
+}
+.dark-theme {
+    background-color: #1a2b34;
+}
+
+.add:hover {
+    background: #000;
+    color: white;
+}
+.no:focus {
+    outline: none;
+}
+
+.light-theme {
+    background-color: #fff;
+}
+
+.border-light-bt {
+    border-bottom: 1px solid #80808035;
+}
+
+.border-light-tp {
+    border-top: 1px solid #80808035;
+}
+
+.border-light {
+    border: 1px solid #80808035;
+}
+
+.header {
+    background-color: #fff;
+    /*background: #fff;*/
+    border-bottom: 0.1px solid #00000015;
+    color: #000;
+    height: 7.6vh;
+    padding: 1vh 5.5vw 1vh 9vw;
+    margin: 0vh 0vw;
+}
+
+.logo {
+    background: white;
+    color: black;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #00000090;
+    border-radius: 1000%;
+}
+
+.login-btn {
+    background: none;
+    color: black;
+    width: 99px;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 0.8em;
+    padding-top: 5px;
+    margin: 1px 0px;
+}
+
+.logout-btn {
+    background: #1e2730;
+    color: #e8fdf5;
+    width: 99px;
+    height: 34px;
+    /*border:0.5px solid black;*/
+    /*border-radius:5px;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    /*font-weight:600;*/
+    padding-top: 0px;
+    /*margin: 1px 10px;*/
+}
+
+.login-input {
+    border: none;
+    background: #00000008;
+    border-radius: 20px;
+    height: 42px;
+    width: 350px;
+    font-size: 0.8em;
+    font-weight: 400;
+
+    padding: 0 20px;
+    outline: none;
+}
+.register-btn {
+    background: none;
+    color: #000;
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    /*border:1px solid black;*/
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding-top: 6px;
+    margin: 0 0px 0 0px;
+    font-weight: 500;
+}
+
+.learn-more-btn {
+    background: #fff;
+    color: black;
+    width: 220px;
+    height: 36px;
+    border: 0.5px solid lightgray;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding-top: 0px;
+    margin: 1vh 0;
+}
+.learn-more-btn:hover {
+    background: #1e2730;
+    color: white;
+}
+
+.search-box {
+    width: 10vw;
+    height: 4vh;
+    background: #00000010;
+    border: none;
+    font-size: 0.7em;
+    border-radius: 80px;
+    padding: 0 1em;
+    margin: 1vh 2vw;
+    outline: none;
+}
+
+/*main page */
+
+.notification{
+    height:300px;
+    width:300px;
+    border-radius:10px;
+    background:#FDECF4;
+}
+/*end of main page*/
+
+.footer {
+    width: 98.7vw;
+    margin: 10vh auto;
+    /*text-align:center;*/
+}
+
+.footer .footer-links {
+}
+
+/* SCROLL BAR VISIBLITY */
+.scroll {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 90vh;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0px !important; /* Remove scrollbar space */
+    display: none;
+}
+
+.active {
+    color: #000 !important;
+}
+.link-tab {
+    background: #1e2730;
+}
+.links {
+    padding-left: 4vw;
+    padding-top: 8vh;
+}
+
+.link {
+    font-size: 0.8em;
+    padding-top: 5px;
+    margin: 0 10px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.link:focus {
+    outline: none;
+}
+
+.link:hover {
+    font-weight: 600;
+}
+
+/* background color of container before displaying project detail */
+.white-bg {
+    background: #f8f8f8;
+}
+
+/* Project Detail */
+/*.project-detail .detail_description{*/
+
+/*project detail task card*/
