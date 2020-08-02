@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://ashutosh:Deception1@ds343718.mlab.com:43718/momi' ,{ useNewUrlParser: true } )
+mongoose.connect('mongodb+srv://m001-student:m001-mongodb-basics@confabatlas.q5wv4.mongodb.net/Confab?retryWrites=true&w=majority' ,{ useNewUrlParser: true } )
 
 app.use('/api/v1/projects' , projectsRoutes);
 app.use('/api/v1/user' , usersRoutes);
