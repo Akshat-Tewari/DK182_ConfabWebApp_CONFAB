@@ -39,7 +39,7 @@ class ProblemDisplay extends Component {
 
 						<h2 className="f7 pa4 pv5 ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>						
 					<div className="">
-							<h2 className="b mh3 fm pa2 black " style={{fontSize:'0.7em'}}>{title}</h2>
+							<Link href={title}><h2 className="b mh3 fm pa2 black " style={{fontSize:'0.7em'}}>{title}</h2></Link>
 
 							<div className="flex justify-between">
 								<h2 className="b mh3 fm pa2 pv0 black-60 mb2" style={{fontSize:'0.55em' ,paddingTop:'1vh'}}>{createdAt}</h2>
