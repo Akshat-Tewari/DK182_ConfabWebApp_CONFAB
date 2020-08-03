@@ -35,9 +35,6 @@ class ProblemDisplay extends Component {
 
 		return (
 
-			<Link className="no-underline p-d mb5" to={`/`} >
-				<div className=" br4  flex flex-column  justify-between mb2  bg-white" >
-
 			<Link className="no-underline mb5" to={`/`}>
 				<div className=" br4  flex flex-column justify-between mb2  bg-white" style={{width:"45vw" }}
 						{image 	? <img src={image} alt=""/> 
