@@ -291,3 +291,16 @@
 
 
 
+.p-d{
+    width:45vw;
+    margin-left:3vw;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+.p-d{
+    width:85vw;
+    
+}
+}

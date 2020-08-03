@@ -19,10 +19,13 @@ class ProblemDisplay2 extends Component {
 
 
 		return (
-			<Link className="no-underline mb5" to={`/`}>
+			<Link className="no-underline p-d mb5" to={`/`}>
 				<div className=" br4  flex flex-column justify-between mb2  bg-white" style={{width:"45vw" }}>
+						
+						{image 	? <img src={image} alt=""/> 
+								: <h2 className="f7  pa4 pv5 pv5-ns ma0  br4 black-80" style={{fontSize:'1em', background:'#00000008' , letterSpacing:'1.2px'}}>{text}</h2>
+						}	
 
-						<h2 className="f7 pa4 pv5 ma0  br4 black-80" style={{fontSize:'1em', background:'#00000008' , letterSpacing:'1.2px'}}>{text}</h2>						
 					<div className="">
 							<h2 className="b mh3 fm pa2 black " style={{fontSize:'0.9em'}}>{title}</h2>
 							

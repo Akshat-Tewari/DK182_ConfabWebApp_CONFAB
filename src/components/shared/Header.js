@@ -29,16 +29,9 @@ class Header extends Component {
                       <Link className="  link" to="/">Blogs</Link>
                        <Link className=" no-underline  dark-gray f6 fw6 pa1 pr4 link" to="/">My Profile</Link>
                         */}
-            <input type="text" className="search-box" placeholder="Search" />
+            <input type="text" className="search-box dn dib-ns" placeholder="Search" />
 
-            <Link to="/cart">
-              <img
-                src={saveIcon}
-                alt=""
-                className="mt2 mh3   "
-                style={{ width: "22px", height: "22px" }}
-              />
-            </Link>
+          
            
 
             <div class="dropdown">
@@ -63,7 +56,7 @@ class Header extends Component {
               </div>
             </div>
 
-            <button className="  login-btn  no " onClick={this.handleLogout}>
+            <button className="  login-btn dib-ns no " onClick={this.handleLogout}>
               <h2
                 className="ttu fw6 "
                 style={{ fontSize: "0.8em", margin: "0 10px" }}
@@ -102,7 +95,7 @@ class Header extends Component {
         <button className="logo l no">CF</button>
         <a className=" no-underline dark-gray  flex ites-center " href="/">
           <h2
-            className=" pa0 ma0 pl6 fw6 black-90"
+            className=" pa0 ma0 pl0 pl6-ns fw6 black-90"
             style={{ fontSize: "20px", letterSpacing: "1px" }}
           >
             ConFab

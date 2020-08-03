@@ -34,20 +34,27 @@ class ProblemDisplay extends Component {
 
 
 		return (
+
+			<Link className="no-underline p-d mb5" to={`/`} >
+				<div className=" br4  flex flex-column  justify-between mb2  bg-white" >
+
 			<Link className="no-underline mb5" to={`/`}>
 				<div className=" br4  flex flex-column justify-between mb2  bg-white" style={{width:"45vw" }}>
 				{image 	? <img src={image} alt=""/> 
 								: <h2 className="f7  pa4 pv5 pv5-ns ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>
 						}
 
-						<h2 className="f7 pa4 pv5 ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>						
+
+						{image 	? <img src={image} alt=""/> 
+								: <h2 className="f7  pa4 pv5 pv5-ns ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>
+						}						
 					<div className="">
-							<Link href={title}><h2 className="b mh3 fm pa2 black " style={{fontSize:'0.7em'}}>{title}</h2></Link>
+							<Link href={title}><h2 className="b mh3 fm pa0 mw2 pa2-ns black " style={{fontSize:'0.7em'}}>{title}</h2></Link>
 
 							<div className="flex justify-between">
 								<h2 className="b mh3 fm pa2 pv0 black-60 mb2" style={{fontSize:'0.55em' ,paddingTop:'1vh'}}>{createdAt}</h2>
 								<div className="s-s-icon flex">
-									<h2 className="f7 black-80 fm pb3 mh3">0 Comments</h2>
+									<h2 className="f7 black-80 fm pb3 mh3 dn dib-ns">0 Comments</h2>
 									<img src={saveIcon} alt="" title="Save" style={{height:"20px"}} className="mh2 pt2"/>
 
 

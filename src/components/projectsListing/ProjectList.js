@@ -24,9 +24,9 @@ class ProjectList extends Component {
       </div>
     ) : (
       <div className="">
-        <div className="" style={{marginLeft:"4vw"}}>
+        <div className=" ml1 ml4-ns" style={{}}>
           
-          <div className="project_lis flex flex-column mb4 ml3 ">
+          <div className="project_lis flex flex-column mb4  ">
             {projects.map((project) => (
               <ProblemDisplay project={project} key={project._id} />
             ))}
