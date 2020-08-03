@@ -57,15 +57,15 @@ class NewPost extends Component {
 		}
 
 		return (
-			<div className="flex " style={{}}>
+			<div className="flex  flex-wrap " style={{}}>
 				<div
-					className="NP-heading bl bw1 b--hot-pink mh5 mv3 "
+					className="NP-heading bl bw1 b--hot-pink ml4 mh5-ns mv3 "
 					style={{ height: "10vh", marginTop: "10vh" }}
 				>
 					<h2 className="f4 ttu hot-pink ph3">New Post</h2>
 				</div>
 
-				<div className="flex fm flex-column mt5 mh6 pl5">
+				<div className="flex fm flex-column mt2 mt5-ns ml4 mh6-ns pl0 pl5-ns">
 					<label className="ma3 f7 fw7 ttu black-70 ml0">URL</label>
 					<textarea
 						className=" np-input-u"

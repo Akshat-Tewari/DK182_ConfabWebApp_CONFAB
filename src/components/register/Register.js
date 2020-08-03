@@ -64,12 +64,12 @@ class Register extends Component {
 		return (
 			<div className="flex fm justify-around mt2 pa4" style={{marginLeft:'auto' , marginRight:'auto'}}>
 				
-				<div className="photo ">
+				<div className="photo dn dib-ns ">
 					<h1 className="f4 fw1 tc fw8 black-20 l 1h-heading pt4">Highlight Your Work with Confab </h1>
 					<img src={image} alt="" className="illustration " style={{height:'66vh'}}/>
 				</div>
 				
-				<div className="flex fm flex-column mt4">
+				<div className="flex fm flex-column mt3 mt4-ns">
 					<h3 className="  fw7 ttu f5 ma3 l black-80 ">Get Started For Free</h3>
 					<label className="ma3 f7 fw7 ttu black-80 ml0">Username</label>
 					<input

@@ -45,14 +45,14 @@ class Login extends Component {
 		return (
 			<div className=" flex fm justify-around mt2 pa4 " style={{marginLeft:'auto' , marginRight:'auto'}}>
 
-				<div className="photo ">
+				<div className="photo dn dib-ns ">
 				
 					<h1 className="f2 tc  fw8 black-10 l 1h-heading pb2">Save Share Explore</h1>
 					<img src={image} alt="" className="illustration " style={{height:'50vh'}}/>
 
 				</div>
 
-				<div className="flex fm flex-column mt5 ">
+				<div className="flex fm flex-column mt3  mt5-ns ">
 					<h3 className=" fw7 ttu f5 l ma3 ml0 black-80">
 						Welcome Back ❤
 					</h3>
