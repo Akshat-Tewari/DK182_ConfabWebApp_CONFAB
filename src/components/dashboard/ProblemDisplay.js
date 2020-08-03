@@ -39,12 +39,7 @@ class ProblemDisplay extends Component {
 				<div className=" br4  flex flex-column  justify-between mb2  bg-white" >
 
 			<Link className="no-underline mb5" to={`/`}>
-				<div className=" br4  flex flex-column justify-between mb2  bg-white" style={{width:"45vw" }}>
-				{image 	? <img src={image} alt=""/> 
-								: <h2 className="f7  pa4 pv5 pv5-ns ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>
-						}
-
-
+				<div className=" br4  flex flex-column justify-between mb2  bg-white" style={{width:"45vw" }}
 						{image 	? <img src={image} alt=""/> 
 								: <h2 className="f7  pa4 pv5 pv5-ns ma0  br4 black-80" style={{fontSize:'0.85em', background:'#00000009'}}>{text}</h2>
 						}						
